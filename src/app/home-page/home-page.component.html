@@ -1,0 +1,8 @@
+<div>
+    <div class="form-group">
+        <label for="linkInput">Place Your Link</label>
+        <input type="text" [formControl]="linkForm" class="form-control" id="linkInput" placeholder="Shorten your link">
+    </div>
+    <p input type="text" *ngIf="isShowBar" class="form-control" (click)="onClick()" >http://localhost:3000/bit.ly/urls/{{id}}</p> 
+    <button type="submit" class="btn btn-primary" (click)="onSubmit()">Shorten</button>
+</div>

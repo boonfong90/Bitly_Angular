@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bitly';
+
+  buttons = [
+    { 
+      title: "Home",
+      path: "/Home",
+    },
+    { 
+      title: "URL List",
+      path: "/URLs",
+    }
+  ]
 }
